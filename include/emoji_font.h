@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 void emoji_font_init(void);
-extern lv_font_t *imgfont;
+extern lv_font_t *emoji_font;
 #ifdef __cplusplus
 }
 #endif

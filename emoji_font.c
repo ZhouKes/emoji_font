@@ -100,19 +100,19 @@ static bool get_imgfont_path(const lv_font_t * font, void * img_src,
 }
  
  
-lv_font_t *imgfont;
+lv_font_t *emoji_font;
  
  
 void emoji_font_init(void)
 {
-  imgfont = lv_imgfont_create(32, get_imgfont_path);
-  if(imgfont == NULL) {
+  emoji_font = lv_imgfont_create(32, get_imgfont_path);
+  if(emoji_font == NULL) {
         LV_LOG_ERROR("imgfont init error");
         return;
     }
-    imgfont->base_line = 0;
+    emoji_font->base_line = 0;
 
-    imgfont->fallback = NULL;
+    emoji_font->fallback = NULL;
  
 }
 
